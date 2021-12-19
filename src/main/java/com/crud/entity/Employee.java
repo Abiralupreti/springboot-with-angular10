@@ -1,5 +1,7 @@
 package com.crud.entity;
 
+import lombok.Value;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -31,7 +33,7 @@ public class Employee {
 
 	
 	
-	
+
 	public Employee() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -75,6 +77,6 @@ public class Employee {
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
 	}
-	
+
 	
 }

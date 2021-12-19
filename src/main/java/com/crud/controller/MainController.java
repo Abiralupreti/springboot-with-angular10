@@ -17,11 +17,11 @@ public class MainController {
 	@Autowired
 	EmployeeRepo employeeRepo;
 	
-	//this function returns all the employees
-	@GetMapping("/employees")
-	public List<Employee> getAllEmployees(){
-		
-		return employeeRepo.findAll();
-	}
+//	//this function returns all the employees
+//	@GetMapping("/employees")
+//	public List<Employee> getAllEmployees(){
+//
+//
+//	}
 
 }
