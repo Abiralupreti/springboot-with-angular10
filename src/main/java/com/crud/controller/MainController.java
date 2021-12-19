@@ -2,6 +2,7 @@ package com.crud.controller;
 
 import java.util.List;
 
+import com.crud.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +16,7 @@ import com.crud.repository.EmployeeRepo;
 public class MainController {
 	
 	@Autowired
-	EmployeeRepo employeeRepo;
+	EmployeeService employeeService;
 	
 //	//this function returns all the employees
 //	@GetMapping("/employees")
