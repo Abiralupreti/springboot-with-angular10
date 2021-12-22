@@ -18,4 +18,6 @@ public interface EmployeeService {
     //This is for the to delete the employee by its id
     public void deleteEmloyeeById(Long id);
 
+    public List<Employee> findByFirstName(String firstName);
+
 }

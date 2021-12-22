@@ -34,4 +34,9 @@ public class StudentServiceImpl implements EmployeeService {
         employeeRepo.deleteById(id);
 
     }
+
+    @Override
+    public List<Employee> findByFirstName(String firstName) {
+        return employeeRepo.findByFirstName(firstName);
+    }
 }

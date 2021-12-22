@@ -38,4 +38,8 @@ public class MainController {
 		employeeService.deleteEmloyeeById(id);
 	}
 
+	@GetMapping("/find-by-first-name/{name}")
+	public List<Employee> findByFirstName(@PathVariable("name") String firstName){
+		return employeeService.findByFirstName(firstName);
+	}
 }
